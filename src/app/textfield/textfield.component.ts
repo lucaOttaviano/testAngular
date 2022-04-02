@@ -8,17 +8,23 @@ import { NoteListService } from '../services/note-list.service'; // import del s
 })
 export class TextfieldComponent implements OnInit {
   input: string = "";
-  
+  inputEdit: string = "";
   constructor(private noteListService: NoteListService) { } // injection del servizio
 
   print(){
     if (this.input == ""){
       alert("Input vuoto")
     }
+    
     else{
       this.noteListService.addInput(this.input); // richiama la funzione addInput del service e gli passa la variabile this.input come parametro
       this.input = "";
     }
+  }
+
+  edit(inputEdit: string){
+    this.inputEdit = inputEdit;
+    this.input = this.inputEdit;
   }
 
   ngOnInit(): void {

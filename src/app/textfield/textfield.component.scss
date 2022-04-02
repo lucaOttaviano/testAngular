@@ -24,7 +24,7 @@ textarea {
 /* width */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0.7em;
 }
 
 
@@ -39,7 +39,7 @@ textarea {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: grey;
     border-radius: 10px;
 }
 
