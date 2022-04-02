@@ -1,0 +1,18 @@
+<div>
+    <div class="container-fluid bg-dark d-flex justify-content-center">
+        <div id="list" class="col-2 bg-black d-flex" style="min-height: 32em; flex-direction: column; align-items: center; justify-content: start;">
+            <div>
+                <h4 class="text-light" style="margin-top: 1em">Your notes</h4>
+            </div>
+            <!-- la lista delle note salvate -->
+            <app-notes-list></app-notes-list>
+        </div>
+        <div class="col-6 offset-1 d-flex align-items-center">
+            <!-- l'[(ngModel)] salva l'input in una variabile per il binding di nome input -->
+            <textarea class="container-fluid bg-black" cols="50" rows="20" [(ngModel)]="input"></textarea>
+            <div class="col-2 offset-1">
+                <button (click)="print()" class="btn btn-outline-warning">Print</button>
+            </div>
+        </div>
+    </div>
+</div>

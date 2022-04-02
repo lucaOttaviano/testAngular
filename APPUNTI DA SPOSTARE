@@ -1,0 +1,20 @@
+OBSERVABLE:
+
+Sono oggetti prelevati dalla libreria RXjs( REACTIVE X) e ci consentono di gestire i dati prelevati da un database, o altra fonte esterna, in maniera asincrona, cioè ad intervalli non prefissati
+
+Alcuni esempi possono essere i risultati in tempo reale di una partita di calcio , aerei in arrivo in aeroporto, messaggi in chat, etc…
+
+TERMINOLOGIA
+
+- Observable = l'osservato
+- Observer o Subscriber = quello che osserva, controlla
+
+Es: in areoporto l'observable è il bagaglio da ispezionare, l'observer è il controllore che lo fa 
+
+In js per iniziare a monitorare i dati bisogna "iscriversi", cioè fare un Subscribe
+
+Un observable è immaginabile come un'array in cui i dati arrivano in maniera asincrona 
+
+VEDI OBSERVABLE RXJS E CONNSESSIONI A DATABASE
+
+STUDIA SPRING PRIMA DI STUDIARE COME COLLEGARE JAVA ED Angular
